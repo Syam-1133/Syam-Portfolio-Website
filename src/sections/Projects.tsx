@@ -71,10 +71,10 @@ const Projects = () => {
       tags: ['Python', 'Big Data', 'AWS', 'Docker', 'Machine Learning'],
       achievements: ['514K+ products processed', '7M+ reviews analyzed', 'AWS Elastic Beanstalk deployment'],
       github: 'https://github.com/Syam-1133/Amazon-Recommender-System',
-      demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7393574990387843072/?originTrackingId=0igEXW%2F3RjiD0hDoX2%2FmZQ%3D%3',
+      demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7393574990387843072/',
     },
     {
-      title: '🚗 AI Car Self-Driving Simulation 🚗',
+      title: '🚗 AI Car Self-Driving Simulation',
       subtitle: 'Neural Networks & Genetic Algorithms',
       description:
         'An AI-powered Self-Driving Simulation built with Python and Pyglet. Demonstrates how neural networks and genetic algorithms can evolve self-driving cars that learn to navigate a racetrack using pure Python.',
@@ -83,7 +83,7 @@ const Projects = () => {
       tags: ['Python', 'Pyglet', 'Neural Networks', 'Genetic Algorithms'],
       achievements: ['Self-learning AI cars', 'Evolution simulation', 'Pure Python implementation'],
       github: 'https://github.com/Syam-1133/AI-Car-Racing-Simulation',
-      demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7373956820316565504/?originTrackingId=OH0eI23yQEKZxDzPX%2FQD6g%3D%3D',
+      demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7393574990387843072/',
     },
     {
       title: 'Traffic Monitoring System🚗 📹',
