@@ -10,6 +10,7 @@ import Achievements from './sections/Achievements';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import NeuralBackground from './components/NeuralBackground';
+import Chatbot from './components/Chatbot';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -65,6 +66,9 @@ function App() {
         className="fixed top-0 left-0 h-1 bg-gradient-to-r from-[#007acc] to-[#00d4ff] z-50 transition-all duration-100"
         style={{ width: `${(scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100}%` }}
       />
+      
+      {/* AI Chatbot */}
+      <Chatbot />
     </div>
   );
 }
