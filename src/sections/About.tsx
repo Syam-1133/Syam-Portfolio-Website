@@ -99,25 +99,19 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-white/70 leading-relaxed">
                 <p>
-                  I'm Syam, an MS student with 5 years of engineering experience and 2 years as machine learning engineer who's big on consistency and hard work. I enjoy messy data, tight deadlines, and AI systems that have to work in the real world. I show up every day to build, learn, break things, and fix them.
+                  Hey there! I'm Syam, an AI enthusiast with a passion for pushing the boundaries of technology to create innovative solutions. With over <span className="text-[#007acc] font-medium">5 years of industry experience</span> in AI, Machine Learning, and Embedded Systems, I'm on a mission to make the world smarter and more connected through cutting-edge technologies.
                 </p>
                 <p>
-                  In my previous experience I worked on Developing a Transformer-based optical flow model for high-frame-rate autonomous systems using a 120+ GPU cluster
+                  My journey in AI began during my time as a <span className="text-[#007acc] font-medium">Machine Learning Engineer at Updater Services</span>, where I delved into developing Optical Flow models using Transformers for high-speed autonomous systems. This experience sparked my fascination with the intersection of AI and real-world applications.
                 </p>
                 <p>
-                  Trained embedded CV models for drone airfield recognition (90% F1) and reduced inference time by 40%
+                  As the <span className="text-[#007acc] font-medium">Drone Engineering Club Leader at Governors State University</span>, I've had the pleasure of leading a dynamic team of 20+ members in exciting drone engineering projects. From implementing gesture-based drone control using MediaPipe and Python to mentoring students in computer vision algorithms for real-time object detection, I thrive on exploring the endless possibilities of AI in the realm of autonomous systems.
                 </p>
                 <p>
-                  Designed <span className="text-[#007acc] font-medium">YOLOv8</span> + Intel RealSense-based navigation systems achieving ~5cm pose estimation accuracy
+                  When I'm not immersed in code, you'll find me tinkering with neural networks, exploring the latest advancements in Computer Vision, or honing my problem-solving skills through <span className="text-[#007acc] font-medium">LeetCode challenges (700+ problems solved and counting!)</span>. I'm a firm believer in continuous learning and growth, always seeking out new opportunities to expand my expertise and make a positive impact in the world of AI.
                 </p>
                 <p>
-                  And earlier at <span className="text-[#007acc] font-medium">Alstom</span> I worked as embedded software engineer there I Verified and validated the embedded train control software for four prominent Metro projects: Kochi Metro, and the Chennai Metro REM (Canada Metro)
-                </p>
-                <p>
-                  I'm passionate about building scalable, production-grade AI systems that move from research → deployment → impact.
-                </p>
-                <p>
-                  And yes — I promise my debugging skills are stronger than my coffee ☕
+                  Feel free to explore my portfolio and dive into the projects that showcase my dedication to innovation and problem-solving. Let's connect, collaborate, and embark on a journey to revolutionize the future with AI!
                 </p>
               </div>
             </div>
@@ -191,7 +185,7 @@ const About = () => {
                 <h3 className="text-xl font-bold text-white">Technical Focus</h3>
               </div>
               
-              <div className="space-y-3 text-white/70 text-sm">
+              <div className="space-y-3 text-white/70 text-sm leading-relaxed">
                 <p>
                   <span className="text-[#007acc] font-medium">Computer Vision:</span> Object Detection, Pose Estimation, Optical Flow
                 </p>
@@ -203,6 +197,9 @@ const About = () => {
                 </p>
                 <p>
                   <span className="text-[#007acc] font-medium">Tools:</span> PyTorch, TensorFlow, YOLOv8, OpenCV, Docker, AWS
+                </p>
+                <p className="pt-2 border-t border-white/10 mt-4">
+                  <span className="text-[#007acc] font-medium">What Drives Me:</span> I'm a hardworking individual and a continuous learner who thrives on turning ambitious ideas into reality. Deeply passionate about AI from research to development, I believe in the power of dedication and persistence to create meaningful impact. Every challenge is an opportunity to grow, and I'm committed to pushing boundaries while staying curious and adaptable in this ever-evolving field.
                 </p>
               </div>
             </div>
