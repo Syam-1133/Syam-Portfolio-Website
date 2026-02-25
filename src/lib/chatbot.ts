@@ -5,7 +5,7 @@ export interface Message {
 
 // Knowledge base about you - customize this with your information
 export const KNOWLEDGE_BASE = `
-You are an AI assistant representing Syam Gudipudi's portfolio. Answer questions about Syam professionally and conversationally.
+You are a friendly AI assistant helping visitors learn about Syam Gudipudi. Be conversational, enthusiastic, and personable - like a friend sharing cool stories about Syam's work! Use a casual, warm tone while still being informative.
 
 BACKGROUND:
 - MS in Computer Science student at Governors State University, Chicago (Aug 2024 - May 2026)
@@ -108,9 +108,9 @@ KEY ACHIEVEMENTS:
 - Leading 20+ member engineering team
 - 700+ problems solved on HackerRank (5-star rating)
 
-Always be helpful, professional, and conversational. When listing projects or experience, provide specific details and achievements. If asked about GitHub links or demos, provide the actual URLs when available. If asked something not in the knowledge base, politely suggest contacting Syam directly.
+Be warm, friendly, and genuinely enthusiastic about Syam's work! Mix technical details with casual conversation. Use contractions (he's, that's, it's), add personality, and make it feel like you're chatting with a friend. Keep responses conversational - not too formal or robotic. If you don't know something, just say so in a friendly way and suggest reaching out to Syam directly.
 
-Keep responses concise but informative. Use bullet points when listing multiple items.
+Keep it light and engaging while being helpful!
 `;
 
 export async function sendMessage(messages: Message[]): Promise<string> {
@@ -157,54 +157,54 @@ export function getSimpleResponse(message: string): string {
   
   // Education questions
   if (lowerMessage.includes('education') || lowerMessage.includes('degree') || lowerMessage.includes('study') || lowerMessage.includes('university')) {
-    return "Syam is currently pursuing an MS in Computer Science at Governors State University in Chicago (Aug 2024 - May 2026). His coursework includes AI Foundations, Advanced Operating Systems, Reinforcement Learning, and Algorithms.";
+    return "Syam's currently working on his Master's in Computer Science at Governors State University in Chicago! He's diving deep into AI Foundations, Advanced Operating Systems, Reinforcement Learning, and Algorithms - pretty cool stuff! He'll be wrapping up in May 2026. 🎓";
   }
   
   // Experience questions
   if (lowerMessage.includes('experience') || lowerMessage.includes('work') || lowerMessage.includes('job')) {
-    return "Syam has 5+ years of experience:\n\n• Drone Engineering Club Leader at GSU (2025-2026)\n• ML Engineer at Medha Servo Drives (2023-2024) - Computer vision for drones, 90% F1 score\n• ML Engineer at Updater Services (2021-2022) - Optical Flow models with Transformers\n• Embedded Engineer at Alstom (2018-2021) - Train control software\n\nHe's achieved 90% F1 score in object detection, 5cm pose estimation precision, and 40% processing time reduction.";
+    return "Oh, Syam's got quite the journey! He's been in tech for 5+ years now.\n\nRight now he's leading the Drone Engineering Club at GSU with 20+ students. Before that, he was doing some amazing work as an ML Engineer at Medha Servo Drives - training computer vision models for drone navigation (hit 90% F1 score!). He also worked on cutting-edge Optical Flow models at Updater Services and spent time at Alstom working on train control systems.\n\nSome cool wins: 5cm precision in pose estimation, 40% faster processing times, and consistently hitting 90%+ accuracy rates. The guy knows his stuff! 😊";
   }
   
   // Skills questions
   if (lowerMessage.includes('skill') || lowerMessage.includes('technology') || lowerMessage.includes('tech') || lowerMessage.includes('tools')) {
-    return "Syam's technical skills:\n\n• Languages: Python, C, C++, Java, SQL\n• AI/ML: PyTorch, TensorFlow, OpenCV, YOLOv8, LangChain, RAG\n• Specializations: Computer Vision, Deep Learning, Object Detection, Autonomous Systems\n• Technologies: Docker, AWS, GCP, Git, MLflow, FAISS, Streamlit";
+    return "Syam's tech stack is pretty impressive! He's fluent in Python, C, C++, Java, and SQL.\n\nFor AI/ML, he works with PyTorch, TensorFlow, OpenCV, YOLOv8, and LangChain. He's especially strong in Computer Vision, Deep Learning, and Autonomous Systems - that's where he really shines!\n\nHe's also comfortable with the whole DevOps side: Docker, AWS, GCP, Git, MLflow, you name it. Basically, if it's cutting-edge AI tech, there's a good chance he's worked with it! 🚀";
   }
   
   // Certifications
   if (lowerMessage.includes('certif') || lowerMessage.includes('certificate')) {
-    return "Syam holds several certifications:\n• Machine Learning Specialization\n• Deep Learning Specialization\n• Computer Vision with OpenCV\n• TensorFlow Developer Certificate";
+    return "Yep, Syam's got some solid certifications under his belt! He's completed the Machine Learning Specialization, Deep Learning Specialization, Computer Vision with OpenCV, and he's a certified TensorFlow Developer. He takes learning pretty seriously! 📚";
   }
   
   // Projects - detailed response
   if (lowerMessage.includes('project')) {
-    return "Syam has built several impressive AI projects:\n\n1. **Autonomous Driving Agent** - Multi-environment decision making with Double DQN (18% accuracy improvement)\n\n2. **AI Chatbot & Document Intelligence** - RAG-powered platform with LangChain, FAISS, and OpenAI\n\n3. **Math Gesture Solver** - Hand gesture recognition with OpenCV & Gemini AI (<100ms response)\n\n4. **Amazon Recommender** - 514K+ products, 7M+ reviews, collaborative filtering\n\n5. **Self-Driving Car Simulation** - Neural networks with genetic algorithms\n\n6. **Traffic Monitoring** - Real-time YOLOv8 vehicle detection & speed estimation\n\nAll projects available on his GitHub!";
+    return "Oh man, Syam's projects are so cool! Here are some highlights:\n\n🚗 **Autonomous Driving Agent** - Taught an AI to make smart driving decisions in traffic (18% better than baseline!)\n\n🤖 **AI Chatbot Platform** - Built a smart document Q&A system with RAG, LangChain, and FAISS\n\n✋ **Math Gesture Solver** - Draw math problems in the air and get instant solutions (under 100ms!)\n\n🛒 **Amazon Recommender** - Analyzed 7M+ reviews to recommend products you'll actually like\n\n🏎️ **Self-Driving Car Sim** - Cars that teach themselves to race using genetic algorithms\n\n🚦 **Traffic Monitor** - Real-time vehicle tracking and speed detection with YOLOv8\n\nAll the code's on his GitHub if you want to check them out!";
   }
   
   // Achievements
   if (lowerMessage.includes('achievement') || lowerMessage.includes('accomplish')) {
-    return "Syam's key achievements:\n• 90% F1 score in drone airfield recognition\n• 85% IoU and 90% F1 in object detection\n• 5cm precision in pose estimation\n• 40% processing time reduction\n• 18% improvement in autonomous driving decisions\n• Leading 20+ member engineering team\n• 700+ problems solved (5-star HackerRank)";
+    return "Syam's accomplished some pretty awesome stuff! He hit 90% F1 score on drone airfield recognition (that's really hard!), got pose estimation down to 5cm precision, and made his models 40% faster.\n\nHe's also crushing it at leadership - managing 20+ students in the Drone Club. Oh, and he's a 5-star HackerRank coder with 700+ problems solved. Basically, he's the real deal when it comes to AI and robotics! 🌟";
   }
   
   // Contact
   if (lowerMessage.includes('contact') || lowerMessage.includes('reach') || lowerMessage.includes('email') || lowerMessage.includes('hire')) {
-    return "You can reach Syam through the Contact section on this portfolio, or connect with him on LinkedIn and GitHub. Check the footer for all contact links!";
+    return "Want to get in touch with Syam? Just scroll down to the Contact section below! You can also find him on LinkedIn and GitHub - all the links are in the footer. He's always open to interesting conversations and opportunities! 💬";
   }
   
   // Drone/Robotics specific
   if (lowerMessage.includes('drone') || lowerMessage.includes('robot') || lowerMessage.includes('autonomous')) {
-    return "Syam has extensive drone and autonomous systems experience:\n• Leading Drone Engineering Club at GSU\n• Drone navigation with YOLOv8 & Intel RealSense\n• Gesture-based drone control with MediaPipe\n• Airfield recognition models (90% F1 score)\n• 5cm pose estimation precision\n• Autonomous driving agent with Double DQN";
+    return "Drones and autonomous systems? That's Syam's sweet spot! He's leading the Drone Engineering Club at GSU, building gesture-controlled drones with MediaPipe (yep, control drones with your hands!), and creating navigation systems with YOLOv8 and Intel RealSense.\n\nHis airfield recognition models hit 90% F1 score, and he's got pose estimation dialed in to 5cm precision. Plus, he built an autonomous driving agent that makes tactical decisions in traffic. Pretty futuristic stuff! 🚁✨";
   }
   
   // Computer Vision specific
   if (lowerMessage.includes('computer vision') || lowerMessage.includes('yolo') || lowerMessage.includes('opencv')) {
-    return "Syam specializes in Computer Vision:\n• YOLOv8 object detection (85% IoU, 90% F1)\n• Real-time traffic monitoring\n• Drone navigation systems\n• Pose estimation (5cm precision)\n• Optical Flow with Transformers\n• Hand gesture recognition\n• Technologies: OpenCV, YOLOv8, PyTorch, TensorFlow";
+    return "Computer Vision is where Syam really gets to flex! He's built YOLOv8 detection systems with 85% IoU and 90% F1 scores, real-time traffic monitoring that tracks vehicles on the fly, and hand gesture recognition systems.\n\nHe's also done some cutting-edge work with Optical Flow using Transformers and pose estimation (crazy accurate at 5cm!). His toolbox? OpenCV, YOLOv8, PyTorch, TensorFlow - all the good stuff! 👁️🤖";
   }
   
   // Greeting
   if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
-    return "Hello! I'm Syam's AI assistant. I can tell you about his:\n• Projects (AI/ML, Computer Vision, Autonomous Systems)\n• Experience (5+ years in ML/AI)\n• Skills (PyTorch, TensorFlow, OpenCV, YOLOv8)\n• Education (MS in CS at GSU)\n• Achievements\n\nWhat would you like to know?";
+    return "Hey there! 👋 I'm here to chat about Syam and all the cool AI stuff he's working on!\n\nI can tell you about:\n• His awesome projects (AI cars, gesture recognition, drones!)\n• His 5+ years of ML/AI experience\n• Technical skills (he's got quite the arsenal!)\n• Education and achievements\n• Or anything else you're curious about!\n\nWhat would you like to know? 😊";
   }
   
   // Default response
-  return "I can answer questions about Syam's projects, experience, skills, education, and achievements. Try asking:\n• 'Tell me about his projects'\n• 'What's his experience?'\n• 'What skills does he have?'\n• 'What are his achievements?'";
+  return "Hmm, I'm not quite sure about that one! But I'd love to help you learn about Syam. Try asking me:\n• 'What projects has he built?'\n• 'Tell me about his experience'\n• 'What's he good at?'\n• 'What are his achievements?'\n\nOr just ask me anything about his AI and computer vision work! 😊";
 }

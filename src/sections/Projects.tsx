@@ -83,7 +83,7 @@ const Projects = () => {
       tags: ['Python', 'Pyglet', 'Neural Networks', 'Genetic Algorithms'],
       achievements: ['Self-learning AI cars', 'Evolution simulation', 'Pure Python implementation'],
       github: 'https://github.com/Syam-1133/AI-Car-Racing-Simulation',
-      demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7393574990387843072/',
+      demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7373956820316565504/',
     },
     {
       title: 'Traffic Monitoring System🚗 📹',

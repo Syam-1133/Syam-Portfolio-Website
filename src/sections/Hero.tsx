@@ -5,7 +5,7 @@ const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [typedText, setTypedText] = useState('');
   const [showImageModal, setShowImageModal] = useState(false);
-  const fullText = 'Passionate AI engineer ';
+  const fullText = 'Passionate AI engineer  ';
   const heroRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -124,7 +124,7 @@ const Hero = () => {
               style={{ transitionDelay: '0.8s' }}
             >
             AI Engineer,
-            Machine learning • Computer Vision • GenAI • LLM
+            Machine learning • Computer Vision • GenAI • LLMs
             Designing Scalable AI Systems 
             From Research → Deployment → Impact
 

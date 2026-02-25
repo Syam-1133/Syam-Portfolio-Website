@@ -39,15 +39,40 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    setFormData({ name: '', email: '', message: '' });
-    
-    // Reset success message after 5 seconds
-    setTimeout(() => setIsSubmitted(false), 5000);
+    try {
+      // Web3Forms API endpoint
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_KEY,
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          subject: `Portfolio Contact from ${formData.name}`,
+          from_name: 'Portfolio Contact Form',
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setIsSubmitted(true);
+        setFormData({ name: '', email: '', message: '' });
+        
+        // Reset success message after 5 seconds
+        setTimeout(() => setIsSubmitted(false), 5000);
+      } else {
+        alert('Failed to send message. Please try again or email me directly.');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
+      alert('Failed to send message. Please try again or email me directly.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactInfo = [
@@ -90,7 +115,7 @@ const Contact = () => {
     <section
       id="contact"
       ref={sectionRef}
-      className="relative py-24 lg:py-32"
+      className="relative py-24 lg:py-32 z-10"
     >
       <div className="section-container">
         {/* Section Header */}
@@ -114,7 +139,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Contact Info */}
           <div
-            className={`lg:col-span-2 space-y-6 transition-all duration-700 ${
+            className={`lg:col-span-2 space-y-6 transition-all duration-700 relative z-10 ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-12'
             }`}
             style={{ transitionDelay: '0.2s' }}
@@ -174,12 +199,12 @@ const Contact = () => {
 
           {/* Contact Form */}
           <div
-            className={`lg:col-span-3 transition-all duration-700 ${
+            className={`lg:col-span-3 transition-all duration-700 relative z-20 ${
               isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-12'
             }`}
             style={{ transitionDelay: '0.3s' }}
           >
-            <div className="glass rounded-2xl p-6 lg:p-8 relative overflow-hidden">
+            <div className="glass rounded-2xl p-6 lg:p-8 relative overflow-hidden z-20">
               {/* Border Animation */}
               <div className="absolute inset-0 rounded-2xl border border-[#007acc]/30" />
               
@@ -201,7 +226,7 @@ const Contact = () => {
                         value={formData.name}
                         onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                         required
-                        className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 focus:border-[#007acc] focus:outline-none focus:ring-1 focus:ring-[#007acc] transition-all"
+                        className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 focus:border-[#007acc] focus:outline-none focus:ring-1 focus:ring-[#007acc] transition-all relative z-30"
                         placeholder="Your name"
                       />
                     </div>
@@ -212,7 +237,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                         required
-                        className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 focus:border-[#007acc] focus:outline-none focus:ring-1 focus:ring-[#007acc] transition-all"
+                        className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 focus:border-[#007acc] focus:outline-none focus:ring-1 focus:ring-[#007acc] transition-all relative z-30"
                         placeholder="your@email.com"
                       />
                     </div>
@@ -225,7 +250,7 @@ const Contact = () => {
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       required
                       rows={5}
-                      className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 focus:border-[#007acc] focus:outline-none focus:ring-1 focus:ring-[#007acc] transition-all resize-none"
+                      className="w-full px-4 py-3 rounded-lg bg-white/5 border border-white/10 text-white placeholder-white/30 focus:border-[#007acc] focus:outline-none focus:ring-1 focus:ring-[#007acc] transition-all resize-none relative z-30"
                       placeholder="Tell me about your project or opportunity..."
                     />
                   </div>
@@ -233,7 +258,7 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full btn-primary flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                    className="w-full btn-primary flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed relative z-30"
                   >
                     {isSubmitting ? (
                       <>

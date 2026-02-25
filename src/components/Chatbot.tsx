@@ -10,7 +10,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'assistant',
-      content: "Hi! I'm Syam's AI assistant. Ask me anything about his education, skills, experience, or projects!",
+      content: "Hi! I'm Syam's AI assistant. How can i help you today?",
     },
   ]);
   const [input, setInput] = useState('');
