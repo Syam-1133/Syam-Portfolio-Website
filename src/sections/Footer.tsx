@@ -1,4 +1,5 @@
-import { Heart, Github, Linkedin, Mail, ArrowUp } from 'lucide-react';
+import { Heart, Mail, ArrowUp } from 'lucide-react';
+import { GitHubIcon, LinkedInIcon } from '../components/SocialIcons';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -17,8 +18,8 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: 'https://github.com/Syam-1133', label: 'GitHub' },
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/syam1133/', label: 'LinkedIn' },
+    { icon: GitHubIcon, href: 'https://github.com/Syam-1133', label: 'GitHub' },
+    { icon: LinkedInIcon, href: 'https://www.linkedin.com/in/syam1133/', label: 'LinkedIn' },
     { icon: Mail, href: 'mailto:syamkklr123@gmail.com', label: 'Email' },
   ];
 

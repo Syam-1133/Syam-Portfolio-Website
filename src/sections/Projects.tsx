@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { ExternalLink, Github, Cpu, Hand, Car, ShoppingCart, MessageSquare, Gamepad2, TrafficCone } from 'lucide-react';
+import { ExternalLink, Cpu, Hand, Car, ShoppingCart, MessageSquare, Gamepad2, TrafficCone } from 'lucide-react';
+import { GitHubIcon } from '../components/SocialIcons';
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -168,12 +169,14 @@ const Projects = () => {
                   >
                     <a
                       href={project.github}
+                      {...(project.github !== '#' && { target: '_blank', rel: 'noopener noreferrer' })}
                       className="w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-[#007acc] transition-colors"
                     >
-                      <Github size={16} />
+                      <GitHubIcon size={16} />
                     </a>
                     <a
                       href={project.demo}
+                      {...(project.demo !== '#' && { target: '_blank', rel: 'noopener noreferrer' })}
                       className="w-8 h-8 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center text-white hover:bg-[#007acc] transition-colors"
                     >
                       <ExternalLink size={16} />
@@ -244,7 +247,7 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-[#007acc] hover:text-white transition-colors"
           >
-            <Github size={20} />
+            <GitHubIcon size={20} />
             <span>View More on GitHub</span>
             <ExternalLink size={16} />
           </a>

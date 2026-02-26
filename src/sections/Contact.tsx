@@ -1,20 +1,20 @@
 import { useEffect, useRef, useState } from 'react';
-import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Send, 
-  Github, 
-  Linkedin, 
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Send,
   CheckCircle,
   Loader2
 } from 'lucide-react';
+import { GitHubIcon, LinkedInIcon } from '../components/SocialIcons';
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -60,16 +60,17 @@ const Contact = () => {
 
       if (result.success) {
         setIsSubmitted(true);
+        setSubmitError(false);
         setFormData({ name: '', email: '', message: '' });
-        
+
         // Reset success message after 5 seconds
         setTimeout(() => setIsSubmitted(false), 5000);
       } else {
-        alert('Failed to send message. Please try again or email me directly.');
+        setSubmitError(true);
       }
     } catch (error) {
       console.error('Error sending message:', error);
-      alert('Failed to send message. Please try again or email me directly.');
+      setSubmitError(true);
     } finally {
       setIsSubmitting(false);
     }
@@ -98,13 +99,13 @@ const Contact = () => {
 
   const socialLinks = [
     {
-      icon: Github,
+      icon: GitHubIcon,
       label: 'GitHub',
       href: 'https://github.com/Syam-1133',
       color: '#333',
     },
     {
-      icon: Linkedin,
+      icon: LinkedInIcon,
       label: 'LinkedIn',
       href: 'https://www.linkedin.com/in/syam1133/',
       color: '#0077b5',
@@ -254,6 +255,16 @@ const Contact = () => {
                       placeholder="Tell me about your project or opportunity..."
                     />
                   </div>
+
+                  {submitError && (
+                    <p className="text-red-400 text-sm text-center">
+                      Failed to send message. Please try again or email me directly at{' '}
+                      <a href="mailto:syamkklr123@gmail.com" className="underline hover:text-red-300">
+                        syamkklr123@gmail.com
+                      </a>
+                      .
+                    </p>
+                  )}
 
                   <button
                     type="submit"

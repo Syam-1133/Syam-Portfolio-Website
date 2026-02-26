@@ -24,9 +24,6 @@ const Chatbot = () => {
     const hasApiKey = !!import.meta.env.VITE_OPENAI_API_KEY;
     setUseSimpleMode(!hasApiKey);
     
-    // Debug log
-    console.log('🤖 Chatbot Mode:', hasApiKey ? 'AI-Powered (OpenAI)' : 'Simple Rule-Based');
-    console.log('🔑 API Key detected:', hasApiKey ? 'Yes' : 'No');
   }, []);
 
   useEffect(() => {
@@ -204,7 +201,7 @@ const Chatbot = () => {
                 placeholder="Ask me anything..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                onKeyPress={handleKeyPress}
+                onKeyDown={handleKeyPress}
                 disabled={isLoading}
                 className="flex-1 bg-white/5 border-white/10 text-white placeholder:text-white/40 focus-visible:ring-[#007acc]"
               />

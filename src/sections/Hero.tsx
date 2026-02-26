@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import { ChevronDown, Github, Linkedin, Mail, X } from 'lucide-react';
+import { ChevronDown, Mail, X } from 'lucide-react';
+import { GitHubIcon, LinkedInIcon } from '../components/SocialIcons';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -171,7 +172,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:text-[#007acc] hover:border-[#007acc]/50 transition-all duration-300"
               >
-                <Github size={20} />
+                <GitHubIcon size={20} />
               </a>
               <a
                 href="https://www.linkedin.com/in/syam1133/"
@@ -179,7 +180,7 @@ const Hero = () => {
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/70 hover:text-[#007acc] hover:border-[#007acc]/50 transition-all duration-300"
               >
-                <Linkedin size={20} />
+                <LinkedInIcon size={20} />
               </a>
               <a
                 href="mailto:syamkklr123@gmail.com"
@@ -202,9 +203,13 @@ const Hero = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-[#007acc] to-[#00d4ff] rounded-full blur-3xl opacity-30 animate-pulse-glow" />
               
               {/* Image Container - Circular */}
-              <div 
+              <div
+                role="button"
+                tabIndex={0}
+                aria-label="View full profile photo"
                 className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-white/10 glow-border cursor-pointer group"
                 onClick={() => setShowImageModal(true)}
+                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); setShowImageModal(true); } }}
               >
                 <img
                   src="/profile.jpg"
