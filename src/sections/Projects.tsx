@@ -35,7 +35,7 @@ const Projects = () => {
       icon: Car,
       tags: ['Python', 'PyTorch', 'OpenAI', 'Double DQN', 'HPC'],
       achievements: ['18% improvement in decision accuracy', 'Custom policy network', 'Multi-environment support'],
-      github: '#',
+      github: 'https://github.com/Syam-1133/Multi-Environment-Decision-Making-with-Deep-Reinforcement-Learning',
       demo: '#',
     },
     {

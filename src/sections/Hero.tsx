@@ -6,7 +6,7 @@ const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [typedText, setTypedText] = useState('');
   const [showImageModal, setShowImageModal] = useState(false);
-  const fullText = 'Passionate AI engineer  ';
+  const fullText = 'Turning complex problems into elegant solutions';
   const heroRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -106,7 +106,7 @@ const Hero = () => {
 
             {/* Title with Typewriter Effect */}
             <div
-              className={`mt-6 h-8 transition-all duration-700 ${
+              className={`mt-6 min-h-16 transition-all duration-700 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: '0.6s' }}
@@ -119,15 +119,12 @@ const Hero = () => {
 
             {/* Description */}
             <p
-              className={`mt-6 text-base lg:text-lg text-white/70 max-w-xl mx-auto lg:mx-0 leading-relaxed transition-all duration-700 ${
+              className={`mt-8 text-base lg:text-lg text-white/70 max-w-xl mx-auto lg:mx-0 leading-relaxed transition-all duration-700 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: '0.8s' }}
             >
-            AI Engineer,
-            Machine learning • Computer Vision • GenAI • LLMs
-            Designing Scalable AI Systems 
-            From Research → Deployment → Impact
+              Passionate AI engineer about building AI systems, taking ideas from research to development.
 
             </p>
 
