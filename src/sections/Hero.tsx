@@ -6,7 +6,7 @@ const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [typedText, setTypedText] = useState('');
   const [showImageModal, setShowImageModal] = useState(false);
-  const fullText = 'Turning complex problems into elegant solutions';
+  const fullText = 'AI Engineer';
   const heroRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
