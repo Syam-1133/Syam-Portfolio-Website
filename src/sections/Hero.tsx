@@ -106,12 +106,12 @@ const Hero = () => {
 
             {/* Title with Typewriter Effect */}
             <div
-              className={`mt-6 min-h-16 transition-all duration-700 ${
+              className={`mt-6 min-h-12 transition-all duration-700 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: '0.6s' }}
             >
-              <span className="text-xl sm:text-2xl lg:text-3xl text-white/90 font-light">
+              <span className="text-lg sm:text-xl lg:text-2xl text-white/90 font-light">
                 {typedText}
                 <span className="animate-blink text-[#007acc]">|</span>
               </span>
@@ -119,7 +119,7 @@ const Hero = () => {
 
             {/* Description */}
             <p
-              className={`mt-8 text-base lg:text-lg text-white/70 max-w-xl mx-auto lg:mx-0 leading-relaxed transition-all duration-700 ${
+              className={`mt-4 text-base lg:text-lg text-white/70 max-w-xl mx-auto lg:mx-0 leading-relaxed transition-all duration-700 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
               }`}
               style={{ transitionDelay: '0.8s' }}
