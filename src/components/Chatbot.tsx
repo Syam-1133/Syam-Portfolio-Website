@@ -16,6 +16,7 @@ const Chatbot = () => {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [useSimpleMode, setUseSimpleMode] = useState(true); // Toggle between API and rule-based
+  const [showPopup, setShowPopup] = useState(true);
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -43,6 +44,20 @@ const Chatbot = () => {
       inputRef.current.focus();
     }
   }, [isOpen]);
+
+  useEffect(() => {
+    if (isOpen) {
+      setShowPopup(false);
+    }
+  }, [isOpen]);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      setShowPopup(false);
+    }, 10000);
+
+    return () => window.clearTimeout(timer);
+  }, []);
 
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
@@ -124,6 +139,21 @@ const Chatbot = () => {
       >
         {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
       </Button>
+
+      {!isOpen && showPopup && (
+        <div className="fixed bottom-24 right-6 z-40 pointer-events-none">
+          <div className="relative inline-flex max-w-[220px] items-center gap-3 rounded-2xl border border-white/10 bg-slate-950/95 px-4 py-3 text-xs text-white shadow-2xl backdrop-blur-xl animate-in slide-in-from-bottom-4 duration-300">
+            <div>
+              <p className="font-semibold text-sm">Need help?</p>
+              <p className="mt-1 text-[11px] text-white/70">Ask me about Syam&apos;s projects or experience.</p>
+            </div>
+            <div className="flex h-8 w-8 items-center justify-center rounded-full bg-[#0d4b87] text-white">
+              <MessageCircle size={16} />
+            </div>
+            <span className="absolute bottom-[-0.35rem] right-4 h-3 w-3 rotate-45 rounded-sm bg-slate-950/95 border border-white/10" />
+          </div>
+        </div>
+      )}
 
       {/* Chat Window */}
       {isOpen && (
