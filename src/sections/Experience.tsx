@@ -58,7 +58,7 @@ const Experience = () => {
       title: 'Machine Learning Engineer',
       company: 'Updater Services Pvt Ltd',
       location: 'Delhi, India',
-      period: 'Nov 2021 - Aug 2022',
+      period: 'Nov 2021 - Aug 2023',
       type: 'Contract',
       description: 'Developed optical flow models using transformers for high-speed robotic systems and autonomous vehicles.',
       achievements: [
