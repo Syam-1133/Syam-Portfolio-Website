@@ -40,7 +40,7 @@ const Experience = () => {
       ],
     },
     {
-      title: 'Machine Learning Engineer / R&D Engineer',
+      title: 'Machine Learning Engineer ',
       company: 'Medha Servo Drives Pvt Ltd',
       location: 'Hyderabad, India',
       period: 'Aug 2023 - July 2024',
@@ -62,14 +62,14 @@ const Experience = () => {
       type: 'Contract',
       description: 'Developed optical flow models using transformers for high-speed robotic systems and autonomous vehicles.',
       achievements: [
-        'Developed Optical Flow model using Transformer and GPT-3 for high frame rate processing',
+        'Developed Optical Flow model using Transformer  for high frame rate processing',
         'Exploited temporal cues from multiple images for high-speed Autonomous systems',
         'Conducted research and data analysis to identify error rates correlated to frame rates',
         'Generated diverse frame rate datasets using a cluster of 120+ GPUs with OpenCV and multi-threading',
       ],
     },
     {
-      title: 'Embedded Software Engineer Trainee',
+      title: 'Software System Engineer ',
       company: 'Alstom',
       location: 'Bangalore, India',
       period: 'July 2018 - Aug 2021',
