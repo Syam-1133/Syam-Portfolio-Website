@@ -43,7 +43,7 @@ const About = () => {
   const highlights = [
     {
       icon: Code,
-      title: '5+ Years',
+      title: '6+ Years',
       description: 'Industry Experience',
     },
     {
