@@ -99,7 +99,7 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-white/70 leading-relaxed">
                 <p>
-                  Hey there! I'm Syam, an AI enthusiast with a passion for pushing the boundaries of technology to create innovative solutions. With over <span className="text-[#007acc] font-medium">5 years of industry experience</span> in AI, Machine Learning, and Embedded Systems, I'm on a mission to make the world smarter and more connected through cutting-edge technologies.
+                  Hey there! I'm Syam, an AI enthusiast with a passion for pushing the boundaries of technology to create innovative solutions. With over <span className="text-[#007acc] font-medium">6+ years of industry experience</span> in AI, Machine Learning, and Embedded Systems, I'm on a mission to make the world smarter and more connected through cutting-edge technologies.
                 </p>
                 <p>
                   My journey in AI began during my time as a <span className="text-[#007acc] font-medium">Machine Learning Engineer at Updater Services</span>, where I delved into developing Optical Flow models using Transformers for high-speed autonomous systems. This experience sparked my fascination with the intersection of AI and real-world applications.
