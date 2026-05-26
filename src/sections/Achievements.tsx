@@ -72,7 +72,7 @@ const Achievements = () => {
   ];
 
   const stats = [
-    { value: '5+', label: 'Years Experience', icon: Award },
+    { value: '6+', label: 'Years Experience', icon: Award },
     { value: '700+', label: 'Problems Solved', icon: Code2 },
     { value: '20+', label: 'Team Members Led', icon: Users },
     { value: '90%', label: 'Model Accuracy', icon: Target },
