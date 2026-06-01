@@ -56,7 +56,7 @@ const Experience = () => {
     },
     {
       title: 'Machine Learning Engineer',
-      company: 'Updater Services Pvt Ltd',
+      company: 'Bombardier',
       location: 'Delhi, India',
       period: 'Nov 2021 - Aug 2023',
       type: 'Contract',
