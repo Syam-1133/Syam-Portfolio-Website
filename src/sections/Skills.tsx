@@ -36,44 +36,62 @@ const Skills = () => {
 
   const skillCategories = [
     {
-      title: 'Languages',
+      title: 'Programming Languages',
       icon: Code2,
-      skills: ['Python', 'C', 'C++', 'Java', 'SQL'],
+      skills: ['Python', 'SQL', 'JavaScript', 'TypeScript', 'Bash', 'Java', 'C++', 'R'],
       color: '#007acc',
     },
     {
-      title: 'Frameworks & Libraries',
-      icon: Layers,
-      skills: ['PyTorch', 'TensorFlow', 'OpenCV', 'YOLO', 'Scikit-learn', 'Flask', 'Pandas', 'NumPy','RAG'],
+      title: 'LLM Frameworks & Tools',
+      icon: Sparkles,
+      skills: ['LangChain', 'LangGraph', 'LlamaIndex', 'AutoGen', 'CrewAI', 'Haystack', 'DSPy', 'Semantic Kernel', 'OpenAI Agents SDK', 'Hugging Face'],
       color: '#00d4ff',
     },
     {
-      title: 'AI & ML',
+      title: 'AI / ML & GenAI',
       icon: Brain,
-      skills: ['Deep Learning', 'Computer Vision', 'Neural Networks', 'CNN', 'RNN', 'Transformers', 'LLMs integration', 'Reinforcement Learning'],
+      skills: ['Agentic AI', 'Multi-Agent Systems', 'RAG', 'LLMs', 'NLP', 'Prompt Engineering', 'Fine-tuning (LoRA, QLoRA)', 'Semantic Search', 'RLHF'],
       color: '#7c3aed',
     },
     {
-      title: 'Technologies',
-      icon: Server,
-      skills: ['Docker', 'AWS', 'GCP', 'Git', 'MLflow', 'Linux'],
+      title: 'Vector Databases',
+      icon: Database,
+      skills: ['Pinecone', 'Weaviate', 'ChromaDB', 'FAISS', 'Qdrant', 'Milvus', 'pgvector', 'Elasticsearch'],
+      color: '#f59e0b',
+    },
+    {
+      title: 'MLOps / LLMOps',
+      icon: GitBranch,
+      skills: ['Docker', 'Kubernetes', 'MLflow', 'LangSmith', 'AgentOps', 'Weights & Biases', 'GitHub Actions', 'Jenkins', 'CI/CD'],
       color: '#10b981',
     },
     {
-      title: 'Specializations',
-      icon: Eye,
-      skills: ['Object Detection', 'Image Segmentation', 'Pose Estimation', 'Optical Flow', 'Autonomous Systems'],
-      color: '#f59e0b',
+      title: 'Cloud & Backend',
+      icon: Server,
+      skills: ['AWS (SageMaker, Lambda, S3, Bedrock)', 'Azure OpenAI', 'GCP Vertex AI', 'FastAPI', 'Flask', 'REST APIs', 'Microservices'],
+      color: '#ef4444',
+    },
+    {
+      title: 'ML & NLP Frameworks',
+      icon: Layers,
+      skills: ['PyTorch', 'TensorFlow', 'Scikit-learn', 'Keras', 'XGBoost', 'LightGBM', 'SpaCy', 'NLTK', 'OpenCV', 'Pandas', 'NumPy'],
+      color: '#8b5cf6',
+    },
+    {
+      title: 'LLM Models & Platforms',
+      icon: Box,
+      skills: ['GPT-4o', 'Claude', 'Gemini', 'Llama 3', 'Mistral', 'Cohere', 'Ollama', 'AWS Bedrock', 'Azure OpenAI', 'GCP Vertex AI'],
+      color: '#06b6d4',
     },
   ];
 
   const proficiencyData = [
-    { skill: 'Python', level: 95 },
-    { skill: 'PyTorch', level: 90 },
-    { skill: 'Computer Vision', level: 88 },
-    { skill: 'Deep Learning', level: 85 },
-    { skill: 'OpenCV', level: 92 },
-    { skill: 'TensorFlow', level: 80 },
+    { skill: 'Python', level: 97 },
+    { skill: 'Agentic AI / LLMs', level: 93 },
+    { skill: 'LangChain / LangGraph', level: 91 },
+    { skill: 'RAG Systems', level: 90 },
+    { skill: 'MLOps / LLMOps', level: 88 },
+    { skill: 'Vector Databases', level: 87 },
   ];
 
   return (
@@ -143,7 +161,7 @@ const Skills = () => {
 
           {/* Proficiency Chart */}
           <div
-            className={`glass rounded-2xl p-6 md:col-span-2 lg:col-span-2 transition-all duration-700 ${
+            className={`glass rounded-2xl p-6 md:col-span-2 lg:col-span-3 transition-all duration-700 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
             style={{ transitionDelay: '0.7s' }}
@@ -176,37 +194,26 @@ const Skills = () => {
             </div>
           </div>
 
-          {/* Quick Stats */}
+          {/* Responsible AI & Security */}
           <div
-            className={`glass rounded-2xl p-6 transition-all duration-700 ${
+            className={`glass rounded-2xl p-6 md:col-span-2 lg:col-span-3 transition-all duration-700 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
             }`}
             style={{ transitionDelay: '0.8s' }}
           >
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-lg bg-[#00d4ff]/20 flex items-center justify-center">
-                <Box className="text-[#00d4ff]" size={20} />
+                <Eye className="text-[#00d4ff]" size={20} />
               </div>
-              <h3 className="text-lg font-bold text-white">Tools & Platforms</h3>
+              <h3 className="text-lg font-bold text-white">Responsible AI & Data Engineering</h3>
             </div>
-            
-            <div className="space-y-3">
-              <div className="flex items-center gap-3">
-                <GitBranch className="text-[#007acc]" size={16} />
-                <span className="text-white/70 text-sm">Git & Version Control</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Database className="text-[#007acc]" size={16} />
-                <span className="text-white/70 text-sm">SQL & NoSQL Databases</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Server className="text-[#007acc]" size={16} />
-                <span className="text-white/70 text-sm">Cloud Platforms (AWS/GCP)</span>
-              </div>
-              <div className="flex items-center gap-3">
-                <Brain className="text-[#007acc]" size={16} />
-                <span className="text-white/70 text-sm">MLOps & Model Deployment</span>
-              </div>
+
+            <div className="flex flex-wrap gap-2">
+              {['AI Governance', 'AI Guardrails', 'Prompt Injection Defense', 'Model Evaluation', 'Bias Mitigation', 'Explainable AI', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Cassandra', 'Apache Spark', 'Hadoop', 'Kafka', 'ETL Pipelines', 'Streamlit', 'Gradio', 'Power BI', 'Tableau'].map((item, i) => (
+                <span key={i} className="px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-sm text-white/80">
+                  {item}
+                </span>
+              ))}
             </div>
           </div>
         </div>

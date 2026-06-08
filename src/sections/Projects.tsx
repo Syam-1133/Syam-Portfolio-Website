@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ExternalLink, Cpu, Hand, Car, ShoppingCart, MessageSquare, Gamepad2, TrafficCone } from 'lucide-react';
+import { ExternalLink, Cpu, Hand, Car, ShoppingCart, Gamepad2, TrafficCone, Bot } from 'lucide-react';
 import { GitHubIcon } from '../components/SocialIcons';
 
 const Projects = () => {
@@ -27,74 +27,74 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Multi-Environment Decision Making',
-      subtitle: 'Autonomous Driving Agent',
+      title: 'Document Intelligence Q&A Chatbot',
+      subtitle: 'Voice-Enabled Agentic RAG Platform',
       description:
-        'Created an agent for autonomous driving that can make tactical decisions and navigate through traffic in multiple environments using a custom encoder-decoder policy network with Double DQN.',
-      image: '/project1.jpg',
-      icon: Car,
-      tags: ['Python', 'PyTorch', 'OpenAI', 'Double DQN', 'HPC'],
-      achievements: ['18% improvement in decision accuracy', 'Custom policy network', 'Multi-environment support'],
-      github: 'https://github.com/Syam-1133/Multi-Environment-Decision-Making-with-Deep-Reinforcement-Learning',
-      demo: '#',
-    },
-    {
-      title: 'AI🤖 Chatbot & Document Intelligence',
-      subtitle: 'RAG-Powered Q&A Platform',
-      description:
-        'A sophisticated AI-powered chatbot platform featuring OpenAI Q&A chatbot and an advanced Document Intelligence Platform with RAG capabilities using LangChain, FAISS, and Streamlit.',
+        'Agentic AI-powered Document Intelligence Platform with an end-to-end RAG pipeline using LangChain LCEL, FAISS vector store, and OpenAI Embeddings. Integrates Groq Llama 3.3 70B with custom prompt engineering for autonomous context-aware document Q&A under 3s latency.',
       image: '/project5.jpg',
-      icon: MessageSquare,
-      tags: ['Python', 'LangChain', 'OpenAI', 'RAG', 'Streamlit'],
-      achievements: ['Document Q&A with RAG', 'FAISS vector search', 'Groq Llama-3.1 integration'],
+      icon: Bot,
+      tags: ['Python', 'LangChain', 'LangGraph', 'Groq', 'OpenAI', 'FAISS', 'Streamlit', 'Agentic RAG'],
+      achievements: ['Sub-3s document Q&A latency', 'FAISS vector store + OpenAI Embeddings', 'Groq Llama 3.3 70B integration'],
       github: 'https://github.com/Syam-1133/Syam-s-AI-Powered-Chatbot-and-Document-Intelligence-Platform',
       demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7378632424743690260/',
     },
     {
-      title: '🤖 Math Gesture Problem Solver',
-      subtitle: 'AI Assistant with Hand Gestures',
+      title: 'Amazon Recommender System',
+      subtitle: 'Scalable Big Data ML Recommendations',
       description:
-        'Engineered an AI-driven hand gesture recognition system using OpenCV and Google Gemini AI to process handwritten math problems and provide real-time solutions.',
-      image: '/project3.jpg',
-      icon: Hand,
-      tags: ['Python', 'OpenCV', 'Gemini AI', 'Computer Vision', 'LLM'],
-      achievements: ['<100ms response time', 'Real-time gesture recognition', 'OOP architecture'],
-      github: 'https://github.com/Syam-1133/Math-Gesture-Problem-Solver-Controlled-AI-Assistant',
-      demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7296226128183054336/',
-    },
-    {
-      title: '🛍️ Amazon Recommender System',
-      subtitle: 'Big Data Analytics & ML Recommendations',
-      description:
-        'A comprehensive data analytics engine for Amazon product data with advanced search capabilities and intelligent recommendation algorithms using collaborative filtering on 514K+ products and 7M+ reviews.',
+        'Scalable Amazon recommender system using collaborative filtering and cosine similarity for user-item matching, processing 548K+ products and 7M+ reviews. Achieves under 100ms search and under 500ms recommendation response times, deployed via Docker and AWS Elastic Beanstalk.',
       image: '/project4.jpg',
       icon: ShoppingCart,
-      tags: ['Python', 'Big Data', 'AWS', 'Docker', 'Machine Learning'],
-      achievements: ['514K+ products processed', '7M+ reviews analyzed', 'AWS Elastic Beanstalk deployment'],
+      tags: ['Python', 'Flask', 'Scikit-learn', 'Pandas', 'NumPy', 'Docker', 'AWS', 'Apache Spark'],
+      achievements: ['548K+ products & 7M+ reviews', '<100ms search response', 'AWS Elastic Beanstalk deployment'],
       github: 'https://github.com/Syam-1133/Amazon-Recommender-System',
       demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7393574990387843072/',
     },
     {
-      title: '🚗 AI Car Self-Driving Simulation',
+      title: 'Gesture Controlled AI Math Assistant',
+      subtitle: 'Computer Vision + Google Gemini LLM',
+      description:
+        'AI-driven hand gesture recognition system utilizing OpenCV and cvzone for real-time webcam interactions with under 100ms responsiveness. Integrates Google Gemini 2.0 Flash (multimodal LLM) to process hand-drawn math equations as images and return AI-generated solutions in real time.',
+      image: '/project3.jpg',
+      icon: Hand,
+      tags: ['Python', 'OpenCV', 'Google Gemini LLM', 'Computer Vision', 'Generative AI'],
+      achievements: ['<100ms gesture response time', 'Gemini 2.0 Flash multimodal integration', 'Real-time hand-drawn math solving'],
+      github: 'https://github.com/Syam-1133/Math-Gesture-Problem-Solver-Controlled-AI-Assistant',
+      demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7296226128183054336/',
+    },
+    {
+      title: 'Multi-Environment Decision Making',
+      subtitle: 'Deep Reinforcement Learning Driving Agent',
+      description:
+        'Autonomous driving agent that makes tactical decisions and navigates through traffic in multiple environments using a custom encoder-decoder policy network with Double DQN, trained on HPC clusters.',
+      image: '/project1.jpg',
+      icon: Car,
+      tags: ['Python', 'PyTorch', 'Double DQN', 'HPC', 'Reinforcement Learning'],
+      achievements: ['18% improvement in decision accuracy', 'Custom encoder-decoder policy network', 'Multi-environment support'],
+      github: 'https://github.com/Syam-1133/Multi-Environment-Decision-Making-with-Deep-Reinforcement-Learning',
+      demo: '#',
+    },
+    {
+      title: 'AI Car Self-Driving Simulation',
       subtitle: 'Neural Networks & Genetic Algorithms',
       description:
-        'An AI-powered Self-Driving Simulation built with Python and Pyglet. Demonstrates how neural networks and genetic algorithms can evolve self-driving cars that learn to navigate a racetrack using pure Python.',
+        'AI-powered Self-Driving Simulation demonstrating how neural networks and genetic algorithms evolve self-driving cars that learn to navigate a racetrack, built entirely in pure Python.',
       image: '/project6.jpg',
       icon: Gamepad2,
       tags: ['Python', 'Pyglet', 'Neural Networks', 'Genetic Algorithms'],
-      achievements: ['Self-learning AI cars', 'Evolution simulation', 'Pure Python implementation'],
+      achievements: ['Self-learning AI cars', 'Evolution-based training', 'Pure Python implementation'],
       github: 'https://github.com/Syam-1133/AI-Car-Racing-Simulation',
       demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7373956820316565504/',
     },
     {
-      title: 'Traffic Monitoring System🚗 📹',
-      subtitle: 'YOLOv8 Vehicle Detection & Analysis',
+      title: 'Traffic Monitoring System',
+      subtitle: 'YOLOv8 Real-Time Vehicle Detection',
       description:
-        'A real-time traffic monitoring system using YOLOv8 for vehicle detection, speed estimation, and traffic flow analysis. Counts vehicles entering/exiting regions and provides traffic insights.',
+        'Real-time traffic monitoring system using YOLOv8 for vehicle detection, speed estimation, and traffic flow analysis. Counts vehicles entering/exiting zones and provides actionable traffic insights.',
       image: '/project7.jpg',
       icon: TrafficCone,
       tags: ['Python', 'YOLOv8', 'OpenCV', 'Computer Vision'],
-      achievements: ['Real-time detection', 'Speed estimation', 'Vehicle counting'],
+      achievements: ['Real-time YOLOv8 detection', 'Speed estimation', 'Multi-zone vehicle counting'],
       github: 'https://github.com/Syam-1133/Traffic-Monitoring-System-with-YOLO',
       demo: 'https://www.linkedin.com/feed/update/urn:li:activity:7295462416849518593/',
     },
@@ -120,7 +120,7 @@ const Projects = () => {
             Featured <span className="text-gradient">Projects</span>
           </h2>
           <p className="mt-4 text-white/60 max-w-2xl mx-auto">
-            A collection of my recent work in machine learning, computer vision, and AI systems.
+            A collection of my recent work in Agentic AI, RAG systems, multi-agent pipelines, and machine learning.
           </p>
         </div>
 

@@ -99,19 +99,16 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-white/70 leading-relaxed">
                 <p>
-                  Hey there! I'm Syam, an AI enthusiast with a passion for pushing the boundaries of technology to create innovative solutions. With over <span className="text-[#007acc] font-medium">6+ years of industry experience</span> in AI, Machine Learning, and Embedded Systems, I'm on a mission to make the world smarter and more connected through cutting-edge technologies.
+                  Hey! I'm Syam, and honestly, I'm obsessed with building AI that actually works in the real world. I'm an Agentic AI Engineer with 6+ years of experience designing and deploying Agentic AI systems, multi-agent orchestration pipelines, and Generative AI solutions for enterprise applications. Specialized in building autonomous AI agents, multi-agent workflows, RAG systems, and intelligent automation platforms. After 6+ years working across data science, ML engineering, and now Agentic AI, I've learned that the coolest tech means nothing if it can't solve actual problems at scale 
                 </p>
                 <p>
-                  My journey in AI began during my time as a <span className="text-[#007acc] font-medium">Machine Learning Engineer at Updater Services</span>, where I delved into developing Optical Flow models using Transformers for high-speed autonomous systems. This experience sparked my fascination with the intersection of AI and real-world applications.
+                  My path wasn't linear—it was more like following the problem. Started at <span className="text-[#007acc] font-medium">Alstom as Data Scientist</span> solving railway maintenance issues with data pipelines and dashboards. Then moved to <span className="text-[#007acc] font-medium">Bombardier and Medha Servo Drives</span> where I got my hands dirty with predictive models that actually prevented equipment failures. Each role taught me something crucial: understanding your data, shipping reliable systems, and never settling for "good enough." Now at <span className="text-[#007acc] font-medium">USAA</span>, I'm building autonomous AI agents that make decisions without hand-holding. That's the dream.
                 </p>
                 <p>
-                  As the <span className="text-[#007acc] font-medium">Drone Engineering Club Leader at Governors State University</span>, I've had the pleasure of leading a dynamic team of 20+ members in exciting drone engineering projects. From implementing gesture-based drone control using MediaPipe and Python to mentoring students in computer vision algorithms for real-time object detection, I thrive on exploring the endless possibilities of AI in the realm of autonomous systems.
+                  What gets me excited is taking research from papers and making it production-grade. LangChain, RAG systems, multi-agent orchestration—these aren't just buzzwords for me. They're tools to build systems that reason, handle edge cases, and fail gracefully. I care about the whole pipeline: from prompt engineering to MLOps infrastructure, from bias mitigation to actually understanding why an AI system made a decision.
                 </p>
                 <p>
-                  When I'm not immersed in code, you'll find me tinkering with neural networks, exploring the latest advancements in Computer Vision, or honing my problem-solving skills through <span className="text-[#007acc] font-medium">LeetCode challenges (700+ problems solved and counting!)</span>. I'm a firm believer in continuous learning and growth, always seeking out new opportunities to expand my expertise and make a positive impact in the world of AI.
-                </p>
-                <p>
-                  Feel free to explore my portfolio and dive into the projects that showcase my dedication to innovation and problem-solving. Let's connect, collaborate, and embark on a journey to revolutionize the future with AI!
+                  I'm not here to build another chatbot or demo. I'm here to push AI from research labs into real-world impact. If you're working on something ambitious and want someone who gives a damn about doing it right, let's talk. 🚀
                 </p>
               </div>
             </div>
@@ -187,19 +184,19 @@ const About = () => {
               
               <div className="space-y-3 text-white/70 text-sm leading-relaxed">
                 <p>
-                  <span className="text-[#007acc] font-medium">Computer Vision:</span> Object Detection, Pose Estimation, Optical Flow
+                  <span className="text-[#007acc] font-medium">Agentic AI:</span> Multi-Agent Orchestration, Tool Use, Memory & Planning, Autonomous Workflows
                 </p>
                 <p>
-                  <span className="text-[#007acc] font-medium">Deep Learning:</span> CNNs, Transformers, LLms integration, Neural Networks
+                  <span className="text-[#007acc] font-medium">LLM Frameworks:</span> LangChain, LangGraph, AutoGen, CrewAI, LlamaIndex, DSPy, Haystack
                 </p>
                 <p>
-                  <span className="text-[#007acc] font-medium">ML Engineering:</span> Model Optimization, Embedded Systems, Production Deployment
+                  <span className="text-[#007acc] font-medium">GenAI & RAG:</span> GPT-4o, Claude, Gemini, Llama 3, RAG Pipelines, Semantic Search, Fine-tuning
                 </p>
                 <p>
-                  <span className="text-[#007acc] font-medium">Tools:</span> PyTorch, TensorFlow, YOLOv8, OpenCV, Docker, AWS
+                  <span className="text-[#007acc] font-medium">MLOps / LLMOps:</span> Docker, Kubernetes, MLflow, LangSmith, AWS SageMaker, GCP Vertex AI
                 </p>
                 <p className="pt-2 border-t border-white/10 mt-4">
-                  <span className="text-[#007acc] font-medium">What Drives Me:</span> I'm a hardworking individual and a continuous learner who thrives on turning ambitious ideas into reality. Deeply passionate about AI from research to development, I believe in the power of dedication and persistence to create meaningful impact. Every challenge is an opportunity to grow, and I'm committed to pushing boundaries while staying curious and adaptable in this ever-evolving field.
+                  <span className="text-[#007acc] font-medium">What Drives Me:</span> I thrive on building autonomous AI systems that solve real enterprise problems — from agentic reasoning and tool use to scalable RAG and production-grade LLMOps. Every challenge is an opportunity to push AI from research into meaningful impact.
                 </p>
               </div>
             </div>

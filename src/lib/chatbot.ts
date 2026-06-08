@@ -8,82 +8,96 @@ export const KNOWLEDGE_BASE = `
 You are a friendly AI assistant helping visitors learn about Syam. Be conversational, enthusiastic, and personable - like a friend sharing cool stories about Syam's work! Use a casual, Human tone while still being informative.
 
 BACKGROUND:
+- Agentic AI Engineer with 6+ years of experience designing and deploying Agentic AI systems, multi-agent orchestration pipelines, and Generative AI solutions
 - MS in Computer Science student at Governors State University, Chicago (Aug 2024 - May 2026)
-- 6+ years of industry experience in AI, Machine Learning, and Embedded Systems
-- Passionate AI engineer specializing in Computer Vision, Deep Learning, and Autonomous Systems
+- Currently at USAA building production-grade Agentic AI, LLM, NLP, and Generative AI solutions for claims processing, fraud detection, and customer service automation
+- Specialized in autonomous AI agents, multi-agent workflows, RAG systems, and LLMOps
 - 5-star HackerRank rating with 700+ problems solved
-- Drone Engineering Club Leader at Governors State University (Jan 2025 - April 2026)
 
 EDUCATION:
 - MS in Computer Science, Governors State University, Chicago (Aug 2024 - May 2026)
 - Coursework: AI Foundations, Advanced Operating Systems, Reinforcement Learning, Algorithms
 
-CERTIFICATIONS:
-- Machine Learning Specialization
-- Deep Learning Specialization
-- Computer Vision with OpenCV
-- TensorFlow Developer Certificate
+CURRENT ROLE:
+Agentic AI Engineer - USAA (July 2025 - Present)
+- Designing and deploying production-grade Agentic AI, LLM, NLP, and Generative AI solutions for financial services
+- Building multi-agent pipelines using LangChain, LangGraph, AutoGen, and CrewAI for autonomous task execution
+- Developing advanced RAG systems with GPT-4o, Claude, Gemini, and Llama 3 for claims processing and fraud detection
+- Implementing scalable vector search using Pinecone, Weaviate, ChromaDB, FAISS, and Qdrant
+- Establishing enterprise MLOps/LLMOps pipelines with Docker, Kubernetes, MLflow, and LangSmith
+- Deploying AI models on AWS SageMaker, Lambda, and GCP Cloud Run integrated into financial services platforms
 
 WORK EXPERIENCE:
 
-1. Drone Engineering Club Leader - Governors State University (Jan 2025 - April 2026)
-   - Leading team of 20+ members in drone engineering projects
-   - Organizing workshops on drone programming, computer vision, autonomous navigation
-   - Mentoring students in computer vision algorithms for real-time object detection
-   - Implemented gesture-based drone control using MediaPipe and Python
+1. Agentic AI Engineer - USAA (July 2025 - Present)
+   - Production-grade Agentic AI systems and multi-agent pipelines for financial services
+   - Advanced RAG systems for claims processing, fraud detection, and customer service automation
+   - Vector search and semantic retrieval with Pinecone, Weaviate, ChromaDB, FAISS, Qdrant
+   - NLP and multimodal AI solutions for document processing and summarization
+   - Prompt engineering (CoT, ReAct, ReWOO, Reflexion) and fine-tuning (LoRA, QLoRA, PEFT)
+   - Enterprise MLOps/LLMOps infrastructure with Docker, Kubernetes, and CI/CD
 
-2. Machine Learning Engineer / R&D Engineer - Medha Servo Drives Pvt Ltd (Aug 2023 - July 2024)
-   - Trained computer vision models for drone airfield recognition (90% F1 score)
-   - Designed drone navigation algorithms using YOLOv8 with Intel RealSense
-   - Improved pose estimation precision to within 5cm during flight tests
-   - Developed custom object detection models (85% IoU, 90% F1 score)
-   - Reduced processing time by 40% through lightweight model architectures
+2. AI / Machine Learning Engineer - Medha Servo Drives Pvt Ltd (Aug 2023 - July 2024)
+   - Designed ML models for predictive maintenance and equipment failure prediction
+   - Developed robust ETL pipelines and feature engineering frameworks
+   - Applied regression, clustering, classification, and SVM algorithms
+   - Built BI dashboards and automated reporting using Tableau and Power BI
+   - Created customer segmentation models for fraud detection and retention
 
-3. Machine Learning Engineer - Updater Services Pvt Ltd (Nov 2021 - Aug 2023)
-   - Developed Optical Flow models using Transformers for high-speed autonomous systems
-   - Generated diverse frame rate datasets using 120+ GPU cluster
-   - Conducted research on error rates correlated to frame rates
+3. Machine Learning Engineer - Bombardier (Nov 2021 - Aug 2023)
+   - Analyzed large-scale operational and workforce datasets
+   - Developed interactive dashboards and KPI scorecards using Power BI and Tableau
+   - Built and optimized ETL pipelines for workforce management systems
+   - Applied predictive modeling and forecasting for demand planning
 
-4. Software System Engineer - Alstom (July 2018 - Aug 2021)
-   - Verified embedded train control software for Kochi Metro and Chennai Metro
-   - Executed comprehensive testing protocols for Main Processing Unit software
-   - Ensured safety compliance for public transportation systems
+4. Data Scientist - Alstom (July 2018 - Aug 2021)
+   - Developed BI reports for railway operations and fleet performance monitoring
+   - Performed advanced data analysis and statistical modeling
+   - Built scalable ETL pipelines using Azure Data Factory and GCP
+   - Applied ML models to predict equipment failures and optimize maintenance
 
 TECHNICAL SKILLS:
-- Languages: Python, C, C++, Java, SQL
-- Frameworks: PyTorch, TensorFlow, OpenCV, YOLOv8, Scikit-learn, Flask, Pandas, NumPy, LangChain
-- AI/ML: Deep Learning, Computer Vision, Neural Networks, CNN, RNN, Transformers, LLMs, RAG, Reinforcement Learning
-- Specializations: Object Detection, Image Segmentation, Pose Estimation, Optical Flow, Autonomous Systems
-- Technologies: Docker, AWS, GCP, Git, MLflow, Linux, FAISS, Streamlit
+- Languages: Python, SQL, JavaScript, TypeScript, Bash, Java, C++, R
+- LLM Frameworks: LangChain, LangGraph, LlamaIndex, AutoGen, CrewAI, Haystack, DSPy, OpenAI SDK
+- LLM Models: GPT-4o, Claude, Gemini, Llama 3, Mistral, Cohere, AWS Bedrock, Azure OpenAI, GCP Vertex AI
+- AI/ML: Agentic AI, Multi-Agent Systems, RAG, LLMs, NLP, Prompt Engineering, Fine-tuning, Semantic Search
+- Vector Databases: Pinecone, Weaviate, ChromaDB, FAISS, Qdrant, Milvus, pgvector, Elasticsearch
+- ML Frameworks: PyTorch, TensorFlow, Scikit-learn, XGBoost, LightGBM, SpaCy, NLTK, OpenCV
+- MLOps/LLMOps: Docker, Kubernetes, MLflow, LangSmith, AgentOps, GitHub Actions, Jenkins, CI/CD
+- Cloud: AWS (SageMaker, Lambda, S3, Bedrock), Microsoft Azure, GCP (Vertex AI, BigQuery, Cloud Run)
+- Backend & APIs: FastAPI, Flask, REST APIs, Microservices, Event-Driven Architecture
 
 FEATURED PROJECTS:
 
-1. Multi-Environment Decision Making - Autonomous Driving Agent
-   - Created autonomous driving agent for tactical decisions in traffic
-   - Used custom encoder-decoder policy network with Double DQN
-   - 18% improvement in decision accuracy
-   - Technologies: Python, PyTorch, OpenAI, Double DQN, HPC
-
-2. AI Chatbot & Document Intelligence Platform
-   - Sophisticated AI chatbot with OpenAI Q&A capabilities
-   - Document Intelligence Platform with RAG using LangChain and FAISS
-   - Groq Llama-3.1 integration for document Q&A
-   - Technologies: Python, LangChain, OpenAI, RAG, Streamlit, FAISS
+1. Document Intelligence Q&A Chatbot - Voice-Enabled Agentic RAG Platform (Feb 2026)
+   - Agentic AI-powered platform with end-to-end RAG pipeline using LangChain LCEL
+   - FAISS vector store with OpenAI Embeddings
+   - Groq Llama 3.3 70B integration with custom prompt engineering
+   - Sub-3s document Q&A latency
+   - Technologies: Python, LangChain, LangGraph, Groq, OpenAI, FAISS, Streamlit
    - GitHub: https://github.com/Syam-1133/Syam-s-AI-Powered-Chatbot-and-Document-Intelligence-Platform
 
-3. Math Gesture Problem Solver
-   - AI-driven hand gesture recognition using OpenCV and Google Gemini AI
-   - Processes handwritten math problems in real-time
-   - Response time under 100ms with OOP architecture
-   - Technologies: Python, OpenCV, Gemini AI, Computer Vision, LLM
+2. Amazon Recommender System (Dec 2025)
+   - Scalable recommender using collaborative filtering and cosine similarity
+   - Processes 548K+ products and 7M+ reviews
+   - <100ms search and <500ms recommendation response times
+   - Deployed via Docker and AWS Elastic Beanstalk
+   - Technologies: Python, Flask, Scikit-learn, Pandas, NumPy, Docker, AWS, Apache Spark
+   - GitHub: https://github.com/Syam-1133/Amazon-Recommender-System
+
+3. Gesture Controlled AI Math Assistant (Jan 2025)
+   - Hand gesture recognition using OpenCV and cvzone
+   - Real-time webcam interactions with <100ms responsiveness
+   - Google Gemini 2.0 Flash multimodal LLM for hand-drawn math problem solving
+   - Technologies: Python, OpenCV, Google Gemini LLM, Computer Vision, Generative AI
    - GitHub: https://github.com/Syam-1133/Math-Gesture-Problem-Solver-Controlled-AI-Assistant
 
-4. Amazon Recommender System
-   - Data analytics engine for 514K+ products and 7M+ reviews
-   - Advanced search and collaborative filtering recommendations
-   - Deployed on AWS Elastic Beanstalk with Docker
-   - Technologies: Python, Big Data, AWS, Docker, Machine Learning
-   - GitHub: https://github.com/Syam-1133/Amazon-Recommender-System
+4. Multi-Environment Decision Making - Autonomous Driving Agent
+   - Autonomous agent with tactical decision-making in traffic
+   - Custom encoder-decoder policy network with Double DQN
+   - 18% improvement in decision accuracy
+   - Technologies: Python, PyTorch, OpenAI, Double DQN, HPC
+   - GitHub: https://github.com/Syam-1133/Self-Driving-Car-Deep-Q-Learning-DQN-
 
 5. AI Car Self-Driving Simulation
    - Neural networks evolution using genetic algorithms
@@ -97,15 +111,11 @@ FEATURED PROJECTS:
    - Speed estimation and traffic flow analysis
    - Vehicle counting entering/exiting regions
    - Technologies: Python, YOLOv8, OpenCV, Computer Vision
-   - GitHub: https://github.com/Syam-1133/Traffic-Monitoring-System-with-YOLO
+   - GitHub:https://github.com/Syam-1133/Traffic-Monitoring-System-with-YOLO
 
 KEY ACHIEVEMENTS:
-- 90% F1 score in drone airfield recognition
-- 85% IoU and 90% F1 score in custom object detection
-- 5cm precision in pose estimation for drones
-- 40% reduction in processing time through model optimization
-- 18% improvement in autonomous driving decision accuracy
-- Leading 20+ member engineering team
+- Building production-grade Agentic AI systems at USAA
+- Expert in RAG pipelines, multi-agent orchestration, and LLMOps
 - 700+ problems solved on HackerRank (5-star rating)
 
 Be warm, friendly, and genuinely enthusiastic about Syam's work! Mix technical details with casual conversation. Use contractions (he's, that's, it's), add personality, and make it feel like you're chatting with a friend. Keep responses conversational - not too formal or robotic. If you don't know something, just say so in a friendly way and suggest reaching out to Syam directly.
@@ -157,17 +167,17 @@ export function getSimpleResponse(message: string): string {
   
   // Education questions
   if (lowerMessage.includes('education') || lowerMessage.includes('degree') || lowerMessage.includes('study') || lowerMessage.includes('university')) {
-    return "Syam's currently working on his Master's in Computer Science at Governors State University in Chicago! He's diving deep into AI Foundations, Advanced Operating Systems, Reinforcement Learning, and Algorithms - pretty cool stuff! He'll be wrapping up in May 2026. 🎓";
+    return "Syam's currently pursuing his **Master's in Computer Science at Governors State University** in Chicago (Aug 2024 - May 2026)! 🎓\n\nHis coursework includes:\n📚 AI Foundations\n📚 Advanced Operating Systems\n📚 Reinforcement Learning\n📚 Algorithms\n\nHe's combining his grad studies with working as an Agentic AI Engineer at USAA - so he's literally learning cutting-edge AI theory while building production-grade systems. Pretty intense but awesome! 🚀";
   }
   
   // Experience questions
   if (lowerMessage.includes('experience') || lowerMessage.includes('work') || lowerMessage.includes('job')) {
-    return "Oh, Syam's got quite the journey! He's been in tech for 5+ years now.\n\nRight now he's leading the Drone Engineering Club at GSU with 20+ students. Before that, he was doing some amazing work as an ML Engineer at Medha Servo Drives - training computer vision models for drone navigation (hit 90% F1 score!). He also worked on cutting-edge Optical Flow models at Updater Services and spent time at Alstom working on train control systems.\n\nSome cool wins: 5cm precision in pose estimation, 40% faster processing times, and consistently hitting 90%+ accuracy rates. The guy knows his stuff! 😊";
+    return "Oh, Syam's got quite the journey! He's got 6+ years of industry experience and is doing some seriously cutting-edge work right now.\n\nCurrently, he's an **Agentic AI Engineer at USAA** building production-grade Agentic AI systems, multi-agent pipelines, and RAG systems for claims processing, fraud detection, and customer service automation. He's working with LangChain, LangGraph, AutoGen, CrewAI, and vector databases like Pinecone and FAISS.\n\nBefore USAA, he worked as an ML Engineer at Medha Servo Drives doing computer vision (90% F1 score!), at Bombardier on Optical Flow models with Transformers, and at Alstom on train control software. He's basically touched almost every corner of ML and AI! 🚀";
   }
   
   // Skills questions
   if (lowerMessage.includes('skill') || lowerMessage.includes('technology') || lowerMessage.includes('tech') || lowerMessage.includes('tools')) {
-    return "Syam's tech stack is pretty impressive! He's fluent in Python, C, C++, Java, and SQL.\n\nFor AI/ML, he works with PyTorch, TensorFlow, OpenCV, YOLOv8, and LangChain. He's especially strong in Computer Vision, Deep Learning, and Autonomous Systems - that's where he really shines!\n\nHe's also comfortable with the whole DevOps side: Docker, AWS, GCP, Git, MLflow, you name it. Basically, if it's cutting-edge AI tech, there's a good chance he's worked with it! 🚀";
+    return "Syam's tech stack is incredibly deep! He's fluent in Python, SQL, JavaScript, TypeScript, Java, and C++.\n\nBut here's what he really specializes in:\n• **Agentic AI & LLMs** - LangChain, LangGraph, AutoGen, CrewAI, LlamaIndex\n• **LLM Models** - GPT-4o, Claude, Gemini, Llama 3, Mistral, Cohere\n• **RAG Systems** - Advanced Retrieval-Augmented Generation pipelines\n• **Vector Databases** - Pinecone, Weaviate, ChromaDB, FAISS, Qdrant\n• **Prompt Engineering** - CoT, ReAct, ReWOO, Reflexion, Fine-tuning (LoRA, QLoRA)\n• **MLOps/LLMOps** - Docker, Kubernetes, MLflow, LangSmith, GitHub Actions\n• **Cloud** - AWS, Azure, GCP (SageMaker, Bedrock, Vertex AI)\n• **ML Frameworks** - PyTorch, TensorFlow, Scikit-learn, XGBoost\n\nIf it's cutting-edge AI or LLM tech, he's probably already worked with it! 🤖✨";
   }
   
   // Certifications
@@ -177,12 +187,12 @@ export function getSimpleResponse(message: string): string {
   
   // Projects - detailed response
   if (lowerMessage.includes('project')) {
-    return "Oh man, Syam's projects are so cool! Here are some highlights:\n\n🚗 **Autonomous Driving Agent** - Taught an AI to make smart driving decisions in traffic (18% better than baseline!)\n\n🤖 **AI Chatbot Platform** - Built a smart document Q&A system with RAG, LangChain, and FAISS\n\n✋ **Math Gesture Solver** - Draw math problems in the air and get instant solutions (under 100ms!)\n\n🛒 **Amazon Recommender** - Analyzed 7M+ reviews to recommend products you'll actually like\n\n🏎️ **Self-Driving Car Sim** - Cars that teach themselves to race using genetic algorithms\n\n🚦 **Traffic Monitor** - Real-time vehicle tracking and speed detection with YOLOv8\n\nAll the code's on his GitHub if you want to check them out!";
+    return "Oh man, Syam's projects are seriously impressive! Check these out:\n\n🤖 **Document Intelligence Q&A Chatbot** - Agentic RAG platform with LangChain, FAISS, and Groq Llama 3.3 70B. Delivers document Q&A in under 3 seconds!\n\n🛒 **Amazon Recommender** - Analyzed 548K+ products & 7M+ reviews with collaborative filtering. <100ms search, <500ms recommendations!\n\n✋ **Math Gesture Solver** - Draw math problems in the air with your hands, get instant solutions from Google Gemini AI. <100ms response!\n\n🚗 **Autonomous Driving Agent** - AI that makes smart driving decisions in traffic with Double DQN. 18% better than baseline!\n\n🏎️ **Self-Driving Car Sim** - Cars that teach themselves to race using genetic algorithms and neural networks\n\n🚦 **Traffic Monitor** - Real-time YOLOv8-powered vehicle detection, speed estimation, and counting\n\nAll the code's on his GitHub if you want to dive in! His latest work is all about building production-grade Agentic AI systems at USAA. 🔥";
   }
   
   // Achievements
   if (lowerMessage.includes('achievement') || lowerMessage.includes('accomplish')) {
-    return "Syam's accomplished some pretty awesome stuff! He hit 90% F1 score on drone airfield recognition (that's really hard!), got pose estimation down to 5cm precision, and made his models 40% faster.\n\nHe's also crushing it at leadership - managing 20+ students in the Drone Club. Oh, and he's a 5-star HackerRank coder with 700+ problems solved. Basically, he's the real deal when it comes to AI and robotics! 🌟";
+    return "Syam's accomplished some really impressive stuff! Currently, he's building production-grade Agentic AI and RAG systems at USAA - basically cutting-edge LLM engineering.\n\nBefore that, he hit some wild benchmarks:\n✅ 90% F1 score on drone airfield recognition\n✅ 85% IoU and 90% F1 on custom object detection\n✅ 5cm precision pose estimation (insanely accurate!)\n✅ 40% reduction in processing time through optimization\n✅ 18% improvement in autonomous driving decision accuracy\n✅ 5-star HackerRank coder with 700+ problems solved\n\nBut honestly? His biggest achievement right now is building enterprise-grade Agentic AI systems that actually work in production. That's where the real impact is! 🌟";
   }
   
   // Contact
@@ -192,19 +202,19 @@ export function getSimpleResponse(message: string): string {
   
   // Drone/Robotics specific
   if (lowerMessage.includes('drone') || lowerMessage.includes('robot') || lowerMessage.includes('autonomous')) {
-    return "Drones and autonomous systems? That's Syam's sweet spot! He's leading the Drone Engineering Club at GSU, building gesture-controlled drones with MediaPipe (yep, control drones with your hands!), and creating navigation systems with YOLOv8 and Intel RealSense.\n\nHis airfield recognition models hit 90% F1 score, and he's got pose estimation dialed in to 5cm precision. Plus, he built an autonomous driving agent that makes tactical decisions in traffic. Pretty futuristic stuff! 🚁✨";
+    return "Autonomous systems are definitely one of Syam's superpowers! He's built some amazing things:\n\n🚁 Computer vision models for drone navigation with 90% F1 score\n🎯 Pose estimation dialed in to 5cm precision - crazy accurate!\n🤖 Autonomous driving agents that make smart tactical decisions in traffic (18% better accuracy)\n👁️ Hand gesture recognition systems (useful for gesture-controlled drones!)\n\nHe's worked with YOLOv8 for detection, Intel RealSense, and all sorts of robotics tech. His optical flow work with Transformers was cutting-edge stuff for high-speed systems.\n\nNow at USAA, he's applying that autonomous systems expertise to building intelligent AI agents that make decisions on their own. Pretty cool evolution! 🚀";
   }
   
   // Computer Vision specific
   if (lowerMessage.includes('computer vision') || lowerMessage.includes('yolo') || lowerMessage.includes('opencv')) {
-    return "Computer Vision is where Syam really gets to flex! He's built YOLOv8 detection systems with 85% IoU and 90% F1 scores, real-time traffic monitoring that tracks vehicles on the fly, and hand gesture recognition systems.\n\nHe's also done some cutting-edge work with Optical Flow using Transformers and pose estimation (crazy accurate at 5cm!). His toolbox? OpenCV, YOLOv8, PyTorch, TensorFlow - all the good stuff! 👁️🤖";
+    return "Computer Vision is definitely a strong area for Syam, though he's evolved into Agentic AI and LLMs now!\n\nBut yeah, he's built some impressive CV stuff:\n👁️ YOLOv8 detection systems with 85% IoU and 90% F1 scores\n🚦 Real-time traffic monitoring tracking vehicles on the fly\n👋 Hand gesture recognition systems for gesture-controlled interfaces\n🧮 Optical Flow models using Transformers for high-speed systems\n🎯 Pose estimation with 5cm precision - incredibly accurate!\n\nHis toolbox? OpenCV, YOLOv8, PyTorch, TensorFlow, CLIP, ResNet - all the good stuff!\n\nBut now he's combining CV with LLMs and Agentic AI - so you'll see him using computer vision to feed into RAG systems and multi-agent pipelines. The boundaries are blurring! 🤖";
   }
   
   // Greeting
   if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
-    return "Hey there! 👋 I'm here to chat about Syam and all the cool AI stuff he's working on!\n\nI can tell you about:\n• His awesome projects (AI cars, gesture recognition, drones!)\n• His 5+ years of ML/AI experience\n• Technical skills (he's got quite the arsenal!)\n• Education and achievements\n• Or anything else you're curious about!\n\nWhat would you like to know? 😊";
+    return "Hey there! 👋 I'm here to chat about Syam and all the incredible Agentic AI work he's doing!\n\nI can tell you about:\n• His current role building Agentic AI at USAA\n• Cutting-edge RAG systems and multi-agent pipelines\n• LLM frameworks (LangChain, LangGraph, AutoGen, etc.)\n• His amazing projects (from AI agents to gesture recognition!)\n• 6+ years of ML and AI experience\n• Computer vision, autonomous systems, and more\n• Or anything else you're curious about!\n\nWhat would you like to know? 😊";
   }
   
   // Default response
-  return "Hmm, I'm not quite sure about that one! But I'd love to help you learn about Syam. Try asking me:\n• 'What projects has he built?'\n• 'Tell me about his experience'\n• 'What's he good at?'\n• 'What are his achievements?'\n\nOr just ask me anything about his AI and computer vision work! 😊";
+  return "Hmm, I'm not quite sure about that one! But I'd love to help you learn about Syam. Try asking me:\n• 'What's he working on at USAA?'\n• 'Tell me about Agentic AI and RAG systems'\n• 'What projects has he built?'\n• 'Tell me about his experience'\n• 'What's he good at?'\n• 'What are his achievements?'\n\nOr just ask me anything about his Agentic AI, LLM, or computer vision work! 😊";
 }

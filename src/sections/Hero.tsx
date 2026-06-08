@@ -6,7 +6,7 @@ const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [typedText, setTypedText] = useState('');
   const [showImageModal, setShowImageModal] = useState(false);
-  const fullText = 'AI Engineer | ML Engineer | Problem Solver';
+  const fullText = 'Agentic AI Engineer | Multi-Agent Systems | GenAI';
   const heroRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -124,7 +124,7 @@ const Hero = () => {
               }`}
               style={{ transitionDelay: '0.8s' }}
             >
-              Passionate AI engineer about building AI systems, taking ideas from research to development.
+              Agentic AI Engineer with 6+ years of experience designing and deploying Agentic AI systems, multi-agent orchestration pipelines, and Generative AI solutions for enterprise applications.
 
             </p>
 
@@ -227,19 +227,19 @@ const Hero = () => {
                 className="absolute -top-4 -right-4 px-4 py-2 rounded-full glass text-sm font-medium text-[#007acc] animate-float"
                 style={{ animationDelay: '0s' }}
               >
-                AI/ML
+                Agentic AI
               </div>
               <div
                 className="absolute -bottom-4 -left-4 px-4 py-2 rounded-full glass text-sm font-medium text-[#00d4ff] animate-float"
                 style={{ animationDelay: '2s' }}
               >
-                Computer Vision
+                LangChain / LangGraph
               </div>
               <div
                 className="absolute top-1/2 -right-8 px-4 py-2 rounded-full glass text-sm font-medium text-white/80 animate-float"
                 style={{ animationDelay: '4s' }}
               >
-                Deep Learning
+                RAG Systems
               </div>
             </div>
           </div>

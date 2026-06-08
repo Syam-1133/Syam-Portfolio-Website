@@ -1,11 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
-import { 
-  Trophy, 
-  Star, 
-  Code2, 
-  Target, 
+import {
+  Star,
+  Code2,
   Award,
-  Zap,
   Users,
   Medal
 } from 'lucide-react';
@@ -51,31 +48,11 @@ const Achievements = () => {
       description: 'Selected as member among 10,000+ applicants',
       color: '#10b981',
     },
-    {
-      icon: Trophy,
-      title: 'Drone Club Leader',
-      description: 'Leading 20+ members in drone engineering projects',
-      color: '#f59e0b',
-    },
-    {
-      icon: Target,
-      title: '90% F1 Score',
-      description: 'Achieved in drone airfield recognition models',
-      color: '#ef4444',
-    },
-    {
-      icon: Zap,
-      title: '40% Performance',
-      description: 'Reduced processing time with lightweight CV models',
-      color: '#8b5cf6',
-    },
   ];
 
   const stats = [
     { value: '6+', label: 'Years Experience', icon: Award },
     { value: '700+', label: 'Problems Solved', icon: Code2 },
-    { value: '20+', label: 'Team Members Led', icon: Users },
-    { value: '90%', label: 'Model Accuracy', icon: Target },
   ];
 
   return (
@@ -101,7 +78,7 @@ const Achievements = () => {
 
         {/* Stats Row */}
         <div
-          className={`grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mb-12 transition-all duration-700 ${
+          className={`grid grid-cols-2 lg:grid-cols-2 gap-4 lg:gap-6 mb-12 max-w-md mx-auto transition-all duration-700 ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
           style={{ transitionDelay: '0.2s' }}
