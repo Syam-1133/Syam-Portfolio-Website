@@ -124,7 +124,7 @@ const Hero = () => {
               }`}
               style={{ transitionDelay: '0.8s' }}
             >
-              Agentic AI Engineer with 6+ years of experience designing and deploying Agentic AI systems, multi-agent orchestration pipelines, and Generative AI solutions for enterprise applications.
+              Agentic AI Engineer with 7+ years of experience designing and deploying Agentic AI systems, multi-agent orchestration pipelines, and Generative AI solutions for enterprise applications.
 
             </p>
 

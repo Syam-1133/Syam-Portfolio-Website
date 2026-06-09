@@ -43,7 +43,7 @@ const About = () => {
   const highlights = [
     {
       icon: Code,
-      title: '6+ Years',
+      title: '7+ Years',
       description: 'Industry Experience',
     },
     {
@@ -99,7 +99,7 @@ const About = () => {
               </h3>
               <div className="space-y-4 text-white/70 leading-relaxed">
                 <p>
-                  Hey! I'm Syam, and honestly, I'm obsessed with building AI that actually works in the real world. I'm an Agentic AI Engineer with 6+ years of experience designing and deploying Agentic AI systems, multi-agent orchestration pipelines, and Generative AI solutions for enterprise applications. Specialized in building autonomous AI agents, multi-agent workflows, RAG systems, and intelligent automation platforms. After 6+ years working across data science, ML engineering, and now Agentic AI, I've learned that the coolest tech means nothing if it can't solve actual problems at scale 
+                  Hey! I'm Syam, and honestly, I'm obsessed with building AI that actually works in the real world. I'm an Agentic AI Engineer with 7+ years of experience designing and deploying Agentic AI systems, multi-agent orchestration pipelines, and Generative AI solutions for enterprise applications. Specialized in building autonomous AI agents, multi-agent workflows, RAG systems, and intelligent automation platforms. After 7+ years working across data science, ML engineering, and now Agentic AI, I've learned that the coolest tech means nothing if it can't solve actual problems at scale 
                 </p>
                 <p>
                   My path wasn't linear—it was more like following the problem. Started at <span className="text-[#007acc] font-medium">Alstom as Data Scientist</span> solving railway maintenance issues with data pipelines and dashboards. Then moved to <span className="text-[#007acc] font-medium">Bombardier and Medha Servo Drives</span> where I got my hands dirty with predictive models that actually prevented equipment failures. Each role taught me something crucial: understanding your data, shipping reliable systems, and never settling for "good enough." Now at <span className="text-[#007acc] font-medium">USAA</span>, I'm building autonomous AI agents that make decisions without hand-holding. That's the dream.

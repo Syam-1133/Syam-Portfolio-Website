@@ -8,7 +8,7 @@ export const KNOWLEDGE_BASE = `
 You are a friendly AI assistant helping visitors learn about Syam. Be conversational, enthusiastic, and personable - like a friend sharing cool stories about Syam's work! Use a casual, Human tone while still being informative.
 
 BACKGROUND:
-- Agentic AI Engineer with 6+ years of experience designing and deploying Agentic AI systems, multi-agent orchestration pipelines, and Generative AI solutions
+- Agentic AI Engineer with 7+ years of experience designing and deploying Agentic AI systems, multi-agent orchestration pipelines, and Generative AI solutions
 - MS in Computer Science student at Governors State University, Chicago (Aug 2024 - May 2026)
 - Currently at USAA building production-grade Agentic AI, LLM, NLP, and Generative AI solutions for claims processing, fraud detection, and customer service automation
 - Specialized in autonomous AI agents, multi-agent workflows, RAG systems, and LLMOps
@@ -172,7 +172,7 @@ export function getSimpleResponse(message: string): string {
   
   // Experience questions
   if (lowerMessage.includes('experience') || lowerMessage.includes('work') || lowerMessage.includes('job')) {
-    return "Oh, Syam's got quite the journey! He's got 6+ years of industry experience and is doing some seriously cutting-edge work right now.\n\nCurrently, he's an **Agentic AI Engineer at USAA** building production-grade Agentic AI systems, multi-agent pipelines, and RAG systems for claims processing, fraud detection, and customer service automation. He's working with LangChain, LangGraph, AutoGen, CrewAI, and vector databases like Pinecone and FAISS.\n\nBefore USAA, he worked as an ML Engineer at Medha Servo Drives doing computer vision (90% F1 score!), at Bombardier on Optical Flow models with Transformers, and at Alstom on train control software. He's basically touched almost every corner of ML and AI! 🚀";
+    return "Oh, Syam's got quite the journey! He's got 7+ years of industry experience and is doing some seriously cutting-edge work right now.\n\nCurrently, he's an **Agentic AI Engineer at USAA** building production-grade Agentic AI systems, multi-agent pipelines, and RAG systems for claims processing, fraud detection, and customer service automation. He's working with LangChain, LangGraph, AutoGen, CrewAI, and vector databases like Pinecone and FAISS.\n\nBefore USAA, he worked as an ML Engineer at Medha Servo Drives doing computer vision (90% F1 score!), at Bombardier on Optical Flow models with Transformers, and at Alstom on train control software. He's basically touched almost every corner of ML and AI! 🚀";
   }
   
   // Skills questions
@@ -212,7 +212,7 @@ export function getSimpleResponse(message: string): string {
   
   // Greeting
   if (lowerMessage.includes('hello') || lowerMessage.includes('hi') || lowerMessage.includes('hey')) {
-    return "Hey there! 👋 I'm here to chat about Syam and all the incredible Agentic AI work he's doing!\n\nI can tell you about:\n• His current role building Agentic AI at USAA\n• Cutting-edge RAG systems and multi-agent pipelines\n• LLM frameworks (LangChain, LangGraph, AutoGen, etc.)\n• His amazing projects (from AI agents to gesture recognition!)\n• 6+ years of ML and AI experience\n• Computer vision, autonomous systems, and more\n• Or anything else you're curious about!\n\nWhat would you like to know? 😊";
+    return "Hey there! 👋 I'm here to chat about Syam and all the incredible Agentic AI work he's doing!\n\nI can tell you about:\n• His current role building Agentic AI at USAA\n• Cutting-edge RAG systems and multi-agent pipelines\n• LLM frameworks (LangChain, LangGraph, AutoGen, etc.)\n• His amazing projects (from AI agents to gesture recognition!)\n• 7+ years of ML and AI experience\n• Computer vision, autonomous systems, and more\n• Or anything else you're curious about!\n\nWhat would you like to know? 😊";
   }
   
   // Default response
