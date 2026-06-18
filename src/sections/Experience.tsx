@@ -29,16 +29,20 @@ const Experience = () => {
       title: 'Agentic AI Engineer',
       company: 'USAA',
       location: 'Chicago, Illinois, USA',
-      period: 'July 2025 - Present',
+      period: 'July 2025 - June 2026',
       type: 'Full-time',
-      description: 'Designing and deploying production-grade Agentic AI, LLM, NLP, and Generative AI solutions for claims processing, fraud detection, customer service automation, and intelligent decision-making.',
+      description: 'Designed and deployed enterprise-scale Agentic AI solutions using Python, FastAPI, LangChain, and LangGraph, automating insurance claims processing, fraud investigations, customer service workflows, and financial operations — reducing manual effort by 45% and improving response times by 60%.',
       achievements: [
-        'Developed production-grade LLM Agentic AI systems and multi-agent pipelines using LangChain, LlamaIndex, LangGraph, AutoGen, and CrewAI for autonomous task execution and intelligent decision support',
-        'Built advanced RAG systems using GPT-4o, Claude, Gemini, Llama 3, AWS Bedrock, and Azure OpenAI, improving semantic search and enterprise knowledge retrieval',
-        'Implemented scalable vector search using Pinecone, Weaviate, ChromaDB, FAISS, Qdrant, and pgvector with text-embedding-3 and BGE models',
-        'Applied prompt engineering techniques (CoT, ReAct, ReWOO, Reflexion) and fine-tuning (LoRA, QLoRA, PEFT) to improve LLM accuracy and domain adaptation',
-        'Established enterprise MLOps/LLMOps/AgentOps pipelines with Docker, Kubernetes, MLflow, LangSmith, and CI/CD for agent deployment and monitoring',
-        'Deployed AI models on AWS SageMaker, AWS Lambda, and GCP Cloud Run integrated into microservices-based financial services platforms',
+        'Designed and deployed enterprise-scale Agentic AI solutions using Python, FastAPI, LangChain, LangGraph, and OpenAI APIs, automating customer service workflows, insurance claims processing, fraud investigations, and financial operations, reducing manual effort by 45% and improving response times by 60%.',
+        'Developed intelligent AI Agents and Multi-Agent Systems using LangGraph, AutoGen, CrewAI, and DSPy to orchestrate policy servicing, claims adjudication, risk assessment, and customer support operations, increasing operational efficiency by 40% across business units.',
+        'Built production-grade LLM-powered AI Copilots leveraging GPT-4o, Claude, Gemini, Llama 3, and AWS Bedrock to assist claims analysts, fraud investigators, and customer service representatives, reducing research time by 55% and improving decision accuracy by 35%.',
+        'Engineered advanced Retrieval-Augmented Generation (RAG) platforms using LangChain, LlamaIndex, Pinecone, Weaviate, and FAISS, enabling semantic retrieval of policy documents, compliance regulations, claims history, and customer records with 92% retrieval accuracy.',
+        'Implemented autonomous AI agent workflows for insurance claims triage, document verification, policy recommendations, and underwriting support, accelerating claims processing cycles by 50% and improving customer satisfaction scores by 30%.',
+        'Developed conversational AI and virtual assistant solutions using OpenAI, Hugging Face Transformers, and Azure OpenAI to provide real-time policy support, claims status updates, and financial guidance, handling over 70% of customer inquiries without human intervention.',
+        'Built scalable vector search and knowledge management systems using Pinecone, Qdrant, Milvus, ChromaDB, Elasticsearch, and pgvector, supporting enterprise-wide AI-powered search across millions of insurance and financial records.',
+        'Applied advanced prompt engineering methodologies including Chain-of-Thought (CoT), ReAct, Self-Consistency, Few-Shot Learning, and Function Calling, improving LLM reasoning performance by 35% and reducing hallucination rates by 40%.',
+        'Fine-tuned domain-specific LLMs using LoRA, QLoRA, PEFT, and Hugging Face Transformers on insurance, claims, and fraud datasets, increasing model precision by 28% and reducing inference costs by 30%.',
+        'Established enterprise-grade LLMOps and MLOps frameworks using Docker, Kubernetes, MLflow, LangSmith, Weights & Biases, GitHub Actions, Jenkins, and CI/CD pipelines for automated deployment, monitoring, governance, and observability of AI agents.',
       ],
     },
     {
@@ -177,7 +181,7 @@ const Experience = () => {
                     {/* Expandable Achievements */}
                     <div
                       className={`overflow-hidden transition-all duration-500 ${
-                        expandedIndex === index ? 'max-h-96 mt-4' : 'max-h-0'
+                        expandedIndex === index ? 'max-h-[900px] mt-4' : 'max-h-0'
                       }`}
                     >
                       <div className="border-t border-white/10 pt-4">
